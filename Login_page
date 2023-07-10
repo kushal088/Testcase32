@@ -1,0 +1,17 @@
+export class loginpage{
+
+    username(){
+        cy.get(':nth-child(2)  >  .oxd-input-group >:nth-Child(2)> .oxd-input').type('Admin')
+    
+    }
+    
+    Password(){
+        cy.get(':nth-child(3)  >  .oxd-input-group >:nth-Child(2)> .oxd-input').type('admin123')
+    
+    }
+
+    clicklogin(){
+        cy.get('.oxd-button').click()
+        
+    }
+}
